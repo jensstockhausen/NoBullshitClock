@@ -1,9 +1,7 @@
 package de.famst.nobullshitclock
 
 import android.annotation.SuppressLint
-import android.content.res.Resources
 import android.graphics.Color
-import android.graphics.Point
 import android.os.Bundle
 import android.util.Log
 import android.util.TypedValue
@@ -45,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         // config UI
         setContentView(R.layout.activity_main)
 
-        //val main = findViewById<View>(R.id.main)
         clockText = findViewById<View>(R.id.clockText) as TextView
         clockText.setTextColor(Color.rgb(brightnessValues[currentBrightnessIndex], 0,0))
         clockText.setAutoSizeTextTypeUniformWithConfiguration(1, 250, 1, TypedValue.COMPLEX_UNIT_DIP)
